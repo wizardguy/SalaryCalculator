@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5173687331B14CD1C6A083DF /* libPods-SalaryCalculator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2277EB6BE39FC561D983A243 /* libPods-SalaryCalculator.a */; };
+		95CA8EFB1D815916001D6CEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95CA8EFA1D815916001D6CEC /* main.m */; };
+		95CA8EFE1D815916001D6CEC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95CA8EFD1D815916001D6CEC /* AppDelegate.m */; };
+		95CA8F011D815916001D6CEC /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95CA8F001D815916001D6CEC /* FirstViewController.m */; };
+		95CA8F041D815916001D6CEC /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95CA8F031D815916001D6CEC /* SecondViewController.m */; };
+		95CA8F071D815916001D6CEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95CA8F051D815916001D6CEC /* Main.storyboard */; };
+		95CA8F091D815916001D6CEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95CA8F081D815916001D6CEC /* Assets.xcassets */; };
+		95CA8F0C1D815916001D6CEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95CA8F0A1D815916001D6CEC /* LaunchScreen.storyboard */; };
+		95CA8F161D815A08001D6CEC /* SCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 95CA8F151D815A08001D6CEC /* SCalculator.m */; };
+		95CA8F1A1D816159001D6CEC /* SCSampleItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95CA8F191D816159001D6CEC /* SCSampleItemView.m */; };
+		95CA8F1E1D8251C2001D6CEC /* BFAlertManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 95CA8F1D1D8251C2001D6CEC /* BFAlertManager.m */; };
+		95CA8F221D825355001D6CEC /* BFCommonUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 95CA8F211D825355001D6CEC /* BFCommonUtil.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2277EB6BE39FC561D983A243 /* libPods-SalaryCalculator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SalaryCalculator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		91C9F289E696F202CC2F6D51 /* Pods-SalaryCalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalaryCalculator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SalaryCalculator/Pods-SalaryCalculator.debug.xcconfig"; sourceTree = "<group>"; };
+		95CA8EF61D815916001D6CEC /* SalaryCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SalaryCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		95CA8EFA1D815916001D6CEC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		95CA8EFC1D815916001D6CEC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		95CA8EFD1D815916001D6CEC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		95CA8EFF1D815916001D6CEC /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		95CA8F001D815916001D6CEC /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		95CA8F021D815916001D6CEC /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		95CA8F031D815916001D6CEC /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		95CA8F061D815916001D6CEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		95CA8F081D815916001D6CEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		95CA8F0B1D815916001D6CEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		95CA8F0D1D815916001D6CEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95CA8F141D815A08001D6CEC /* SCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCalculator.h; sourceTree = "<group>"; };
+		95CA8F151D815A08001D6CEC /* SCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCalculator.m; sourceTree = "<group>"; };
+		95CA8F171D816072001D6CEC /* DimensDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DimensDefine.h; sourceTree = "<group>"; };
+		95CA8F181D816159001D6CEC /* SCSampleItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCSampleItemView.h; sourceTree = "<group>"; };
+		95CA8F191D816159001D6CEC /* SCSampleItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCSampleItemView.m; sourceTree = "<group>"; };
+		95CA8F1C1D8251C2001D6CEC /* BFAlertManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BFAlertManager.h; path = SalaryCalculator/BFAlertManager.h; sourceTree = "<group>"; };
+		95CA8F1D1D8251C2001D6CEC /* BFAlertManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BFAlertManager.m; path = SalaryCalculator/BFAlertManager.m; sourceTree = "<group>"; };
+		95CA8F201D825355001D6CEC /* BFCommonUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BFCommonUtil.h; path = SalaryCalculator/BFCommonUtil.h; sourceTree = "<group>"; };
+		95CA8F211D825355001D6CEC /* BFCommonUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BFCommonUtil.m; path = SalaryCalculator/BFCommonUtil.m; sourceTree = "<group>"; };
+		AAA412E3F9E12C3612B96C2D /* Pods-SalaryCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SalaryCalculator.release.xcconfig"; path = "Pods/Target Support Files/Pods-SalaryCalculator/Pods-SalaryCalculator.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95CA8EF31D815916001D6CEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5173687331B14CD1C6A083DF /* libPods-SalaryCalculator.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		184CA49944773091209BB2E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2277EB6BE39FC561D983A243 /* libPods-SalaryCalculator.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		22D0B7C485BB227AE0104D74 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				91C9F289E696F202CC2F6D51 /* Pods-SalaryCalculator.debug.xcconfig */,
+				AAA412E3F9E12C3612B96C2D /* Pods-SalaryCalculator.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		95CA8EED1D815916001D6CEC = {
+			isa = PBXGroup;
+			children = (
+				95CA8F1F1D8251CF001D6CEC /* BFAlert */,
+				95CA8EF81D815916001D6CEC /* SalaryCalculator */,
+				95CA8EF71D815916001D6CEC /* Products */,
+				22D0B7C485BB227AE0104D74 /* Pods */,
+				184CA49944773091209BB2E6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		95CA8EF71D815916001D6CEC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95CA8EF61D815916001D6CEC /* SalaryCalculator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95CA8EF81D815916001D6CEC /* SalaryCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				95CA8F171D816072001D6CEC /* DimensDefine.h */,
+				95CA8F1B1D81662E001D6CEC /* SCSampleItemView */,
+				95CA8F131D8159D2001D6CEC /* calculator */,
+				95CA8EFC1D815916001D6CEC /* AppDelegate.h */,
+				95CA8EFD1D815916001D6CEC /* AppDelegate.m */,
+				95CA8EFF1D815916001D6CEC /* FirstViewController.h */,
+				95CA8F001D815916001D6CEC /* FirstViewController.m */,
+				95CA8F021D815916001D6CEC /* SecondViewController.h */,
+				95CA8F031D815916001D6CEC /* SecondViewController.m */,
+				95CA8F051D815916001D6CEC /* Main.storyboard */,
+				95CA8F081D815916001D6CEC /* Assets.xcassets */,
+				95CA8F0A1D815916001D6CEC /* LaunchScreen.storyboard */,
+				95CA8F0D1D815916001D6CEC /* Info.plist */,
+				95CA8EF91D815916001D6CEC /* Supporting Files */,
+			);
+			path = SalaryCalculator;
+			sourceTree = "<group>";
+		};
+		95CA8EF91D815916001D6CEC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				95CA8EFA1D815916001D6CEC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		95CA8F131D8159D2001D6CEC /* calculator */ = {
+			isa = PBXGroup;
+			children = (
+				95CA8F141D815A08001D6CEC /* SCalculator.h */,
+				95CA8F151D815A08001D6CEC /* SCalculator.m */,
+			);
+			name = calculator;
+			sourceTree = "<group>";
+		};
+		95CA8F1B1D81662E001D6CEC /* SCSampleItemView */ = {
+			isa = PBXGroup;
+			children = (
+				95CA8F181D816159001D6CEC /* SCSampleItemView.h */,
+				95CA8F191D816159001D6CEC /* SCSampleItemView.m */,
+			);
+			name = SCSampleItemView;
+			sourceTree = "<group>";
+		};
+		95CA8F1F1D8251CF001D6CEC /* BFAlert */ = {
+			isa = PBXGroup;
+			children = (
+				95CA8F201D825355001D6CEC /* BFCommonUtil.h */,
+				95CA8F211D825355001D6CEC /* BFCommonUtil.m */,
+				95CA8F1C1D8251C2001D6CEC /* BFAlertManager.h */,
+				95CA8F1D1D8251C2001D6CEC /* BFAlertManager.m */,
+			);
+			name = BFAlert;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		95CA8EF51D815916001D6CEC /* SalaryCalculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95CA8F101D815916001D6CEC /* Build configuration list for PBXNativeTarget "SalaryCalculator" */;
+			buildPhases = (
+				15EB7423389E1D88FB8F08F2 /* Check Pods Manifest.lock */,
+				95CA8EF21D815916001D6CEC /* Sources */,
+				95CA8EF31D815916001D6CEC /* Frameworks */,
+				95CA8EF41D815916001D6CEC /* Resources */,
+				3F7857CD89501ED21ACCDC7B /* Embed Pods Frameworks */,
+				87BA5E0DB08A5F115DC48C57 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SalaryCalculator;
+			productName = SalaryCalculator;
+			productReference = 95CA8EF61D815916001D6CEC /* SalaryCalculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95CA8EEE1D815916001D6CEC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Dennis;
+				TargetAttributes = {
+					95CA8EF51D815916001D6CEC = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 95CA8EF11D815916001D6CEC /* Build configuration list for PBXProject "SalaryCalculator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 95CA8EED1D815916001D6CEC;
+			productRefGroup = 95CA8EF71D815916001D6CEC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95CA8EF51D815916001D6CEC /* SalaryCalculator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		95CA8EF41D815916001D6CEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95CA8F0C1D815916001D6CEC /* LaunchScreen.storyboard in Resources */,
+				95CA8F091D815916001D6CEC /* Assets.xcassets in Resources */,
+				95CA8F071D815916001D6CEC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15EB7423389E1D88FB8F08F2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3F7857CD89501ED21ACCDC7B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SalaryCalculator/Pods-SalaryCalculator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87BA5E0DB08A5F115DC48C57 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SalaryCalculator/Pods-SalaryCalculator-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95CA8EF21D815916001D6CEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95CA8F221D825355001D6CEC /* BFCommonUtil.m in Sources */,
+				95CA8F041D815916001D6CEC /* SecondViewController.m in Sources */,
+				95CA8F1A1D816159001D6CEC /* SCSampleItemView.m in Sources */,
+				95CA8F1E1D8251C2001D6CEC /* BFAlertManager.m in Sources */,
+				95CA8EFE1D815916001D6CEC /* AppDelegate.m in Sources */,
+				95CA8F011D815916001D6CEC /* FirstViewController.m in Sources */,
+				95CA8F161D815A08001D6CEC /* SCalculator.m in Sources */,
+				95CA8EFB1D815916001D6CEC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		95CA8F051D815916001D6CEC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95CA8F061D815916001D6CEC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		95CA8F0A1D815916001D6CEC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95CA8F0B1D815916001D6CEC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		95CA8F0E1D815916001D6CEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		95CA8F0F1D815916001D6CEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		95CA8F111D815916001D6CEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91C9F289E696F202CC2F6D51 /* Pods-SalaryCalculator.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SalaryCalculator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bnt.dev.SalaryCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		95CA8F121D815916001D6CEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAA412E3F9E12C3612B96C2D /* Pods-SalaryCalculator.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SalaryCalculator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bnt.dev.SalaryCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95CA8EF11D815916001D6CEC /* Build configuration list for PBXProject "SalaryCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95CA8F0E1D815916001D6CEC /* Debug */,
+				95CA8F0F1D815916001D6CEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95CA8F101D815916001D6CEC /* Build configuration list for PBXNativeTarget "SalaryCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95CA8F111D815916001D6CEC /* Debug */,
+				95CA8F121D815916001D6CEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95CA8EEE1D815916001D6CEC /* Project object */;
+}
