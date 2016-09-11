@@ -10,19 +10,6 @@
 
 @interface SCalculator ()
 
-@property (readwrite, assign) float taxthreshold;
-
-@property (readwrite, assign) float minSocialInsurance;
-@property (readwrite, assign) float maxSocialInsurance;
-@property (readwrite, assign) float minAccumulationFund;
-@property (readwrite, assign) float maxAccumulationFund;
-
-@property (readwrite, assign) float endowmentRate;
-@property (readwrite, assign) float medicalRate;
-@property (readwrite, assign) float joblessRate;
-@property (readwrite, assign) float accumulationFundRate;
-
-
 @end
 
 

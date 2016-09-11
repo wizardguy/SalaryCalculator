@@ -27,10 +27,13 @@
 */
 
 
-- (instancetype)initWithText:(NSString *)text
+- (instancetype)initWithText:(NSString *)text delegate:(id<SCSampleItemViewDelegate>)delegate
 {
     self = [super init];
     if (self) {
+        _delegate = delegate;
+        _text = text;
+        
         _label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, kDefaultItemWidth, kDefaultItemHeight)];
         _label.text = text;
         _label.textAlignment = NSTextAlignmentCenter;
@@ -40,9 +43,35 @@
         [self addSubview:_label];
         self.layer.borderWidth = 1.0f;
         self.layer.borderColor = [UIColor lightGrayColor].CGColor;
+        
+        UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc]initWithTarget:self                 action:@selector(singleTapAction)];
+        [self addGestureRecognizer:singleTap];
+        [self setUserInteractionEnabled:YES];
     }
     return self;
 }
 
+
+
+- (void)singleTapAction
+{
+    [self tappedAnimation];
+    if (self.delegate && [self.delegate conformsToProtocol:@protocol(SCSampleItemViewDelegate)]) {
+        [self.delegate tappedItemWithValue:[self.text floatValue]];
+    }
+}
+
+
+
+- (void)tappedAnimation
+{
+    [UIView animateWithDuration:0.2 animations:^{
+        self.backgroundColor = [UIColor orangeColor];
+        self.label.textColor = [UIColor whiteColor];
+    } completion:^(BOOL finished) {
+        self.backgroundColor = [UIColor whiteColor];
+        self.label.textColor = [UIColor grayColor];
+    }];
+}
 
 @end

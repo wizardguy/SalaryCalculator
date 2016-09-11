@@ -8,13 +8,12 @@
 
 #import "FirstViewController.h"
 #import "DimensDefine.h"
-#import "SCSampleItemView.h"
 #import "BFAlertManager.h"
 #import "SCalculator.h"
 #import <Masonry.h>
 
 
-const NSString * const defaultMaxIncome = @"100000";
+const NSString * const defaultMaxIncome = @"50000";
 const NSString * const defaultMinIncome = @"10000";
 const NSString * const defaultInterval = @"2000";
 
@@ -84,6 +83,7 @@ const NSString * const defaultInterval = @"2000";
     // create the view
     for (int i = 0; i < totalItemNumbers; i++) {
         SCSampleItemView *newItemView = [self createNewSalaryItemWithIncome:(int)(self.min + i*self.interval)];
+        
         [self.view addSubview:newItemView];
         [self.items addObject:newItemView];
     }
@@ -126,7 +126,7 @@ const NSString * const defaultInterval = @"2000";
 - (SCSampleItemView *)createNewSalaryItemWithIncome:(int)income
 {
     NSString *text = [NSString stringWithFormat:@"%d", income];
-    SCSampleItemView *item = [[SCSampleItemView alloc] initWithText:text];
+    SCSampleItemView *item = [[SCSampleItemView alloc] initWithText:text delegate:self];
     return item;
 }
 
@@ -170,14 +170,29 @@ const NSString * const defaultInterval = @"2000";
 
 - (IBAction)btnCalculateClicked:(id)sender {
     if ([self validateIncome]) {
-        NSDictionary *dicResult = [[SCalculator sharedInstance] afterTaxIncomeWithIncome:self.income];
-        self.txtAfterTaxIncome.text = [NSString stringWithFormat:@"%@", [dicResult objectForKey:kSCKeyAfterTax]];
-        self.txtTax.text = [NSString stringWithFormat:@"%@", [dicResult objectForKey:kSCKeyTax]];
-        self.txtPersonalPayment.text = [NSString stringWithFormat:@"%@", [dicResult objectForKey:kSCKeyPersonalPayment]];
+        [self calculateWithIncome:self.income];
     }
     else {
         [self showAlet];
     }
+}
+
+
+- (void)calculateWithIncome:(float)income
+{
+    NSDictionary *dicResult = [[SCalculator sharedInstance] afterTaxIncomeWithIncome:income];
+    self.txtAfterTaxIncome.text = [NSString stringWithFormat:@"%@", [dicResult objectForKey:kSCKeyAfterTax]];
+    self.txtTax.text = [NSString stringWithFormat:@"%@", [dicResult objectForKey:kSCKeyTax]];
+    self.txtPersonalPayment.text = [NSString stringWithFormat:@"%@", [dicResult objectForKey:kSCKeyPersonalPayment]];
+}
+
+
+
+#pragma mark - SCSampleItemViewDelegate
+
+- (void)tappedItemWithValue:(float)value
+{
+    [self calculateWithIncome:value];
 }
 
 @end

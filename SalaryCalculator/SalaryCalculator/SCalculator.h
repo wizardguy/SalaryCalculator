@@ -15,6 +15,23 @@ extern const NSString * const kSCKeyAfterTax;
 
 @interface SCalculator : NSObject
 
+
+@property (readwrite, assign) float taxthreshold;
+
+@property (readwrite, assign) float minSocialInsurance;
+@property (readwrite, assign) float maxSocialInsurance;
+@property (readwrite, assign) float minAccumulationFund;
+@property (readwrite, assign) float maxAccumulationFund;
+
+@property (readwrite, assign) float endowmentRate;
+@property (readwrite, assign) float medicalRate;
+@property (readwrite, assign) float joblessRate;
+@property (readwrite, assign) float accumulationFundRate;
+
+
+/*
+ * Only for Nanjing. Others must use alloc-init.
+ */
 + (instancetype)sharedInstance;
 
 /*

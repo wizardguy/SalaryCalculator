@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SCSampleItemView.h"
 
-@interface FirstViewController : UIViewController
+@interface FirstViewController : UIViewController <SCSampleItemViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *txtMin;
 
